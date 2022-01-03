@@ -12,9 +12,8 @@ brew 'gh'
 brew 'git'
 brew 'gnupg'
 brew 'grep'
-brew 'httpie'
+brew 'httpie' # Better curl
 brew 'mackup'
-brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'svn' # Needed to install fonts
 
@@ -25,11 +24,17 @@ brew 'python'
 # Apps
 ## Misc
 cask 'caffeine'
+cask 'deepl'
 cask 'gpg-suite'
 cask 'imageoptim'
 cask 'spotmenu'
+cask 'vmware-fusion'
+
+## Password Managers
 cask '1password'
 cask 'lastpass'
+
+## VPN
 cask 'nordvpn'
 cask 'tunnelblick'
 
@@ -40,6 +45,7 @@ cask 'google-chrome'
 # Development
 cask 'pycharm'
 cask 'webstorm'
+cask 'android-studio'
 cask 'visual-studio-code'
 cask 'tableplus'
 cask 'docker'
