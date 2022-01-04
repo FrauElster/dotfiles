@@ -29,7 +29,6 @@ cask 'deepl'
 cask 'gpg-suite'
 cask 'imageoptim'
 cask 'spotmenu'
-cask 'vmware-fusion'
 
 ## Password Managers
 cask '1password'
