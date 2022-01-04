@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ "$(docker ps | grep $1)" ]; then
+    docker kill $1
+else
+    echo "$1 is not running, cannot be killed"
+fi

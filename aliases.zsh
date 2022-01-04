@@ -9,6 +9,7 @@ alias -- -="cd -"
 # develop
 alias python="python3"
 
+# docker
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"

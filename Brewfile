@@ -20,6 +20,7 @@ brew 'svn' # Needed to install fonts
 # Development
 brew 'yarn'
 brew 'python'
+brew 'poetry'
 
 # Apps
 ## Misc

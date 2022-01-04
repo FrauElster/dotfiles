@@ -26,6 +26,21 @@ brew update
 brew tap homebrew/bundle
 brew bundle --file $DOTFILES/Brewfile
 
+# Prepare poetry
+poetry config virtualenvs.in-project true
+
+# Copy personal scripts
+rm -rf $HOME/.scripts/
+cp -r .scripts/ $HOME/.scripts/
+
+# Setup Git
+GIT_AUTHOR_NAME="Moritz Richter"
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+git config --global user.name "$GIT_AUTHOR_NAME"
+GIT_AUTHOR_EMAIL="moritz.richter@ymail.com"
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+git config --global user.email "$GIT_AUTHOR_EMAIL"
+
 # Clone Github repositories
 $DOTFILES/clone.sh
 
